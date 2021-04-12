@@ -1,0 +1,87 @@
+cal=input("Do you want to turn (on/off)?")
+if cal=="on":
+    print("Turning on...")
+    "on"==True
+    while True:
+        a=input("First Input(insert number or write 'cancel'): ")
+        b=input("Second Input(insert number or write 'cancel'): ")
+        c=input("Third Input(insert number or write 'cancel'): ")
+        d=input("Order of operation (+,-,/,x)(Order of Operation or write 'cancel'): ")
+        e=input("Second order of operations (+,-,/,x)(Order of Operation or write 'cancel'): ")
+        if a=="cancel":
+           print("Turning off...")
+           break
+        if b=="cancel":
+           print("Turning off...")
+           break
+        if c=="cancel":
+           print("Turning off...")
+           break
+        if d=="cancel":
+           print("Turning off...")
+           break
+        if e=="cancel":
+           print("Turning off...")
+           break
+        if c=="0":
+            if d=="+":
+                print(int(a)+int(b))
+            if d=="-":
+                print(int(a)-int(b))
+            if d=="/":
+                print(int(a)/int(b))
+            if d=="x":
+                print(int(a)*int(b))
+        else:
+            if d=="+":
+                if e=="+":
+                    print(int(a)+int(b)+int(c))
+            if d=="+":
+                if e=="-":
+                    print(int(a)+int(b)-int(c))
+            if d=="+":
+                if e=="/":
+                    print(int(a)+int(b)/int(c))
+            if d=="+":
+                if e=="x":
+                    print(int(a)+int(b)*int(c))
+            if d=="-":
+                if e=="+":
+                    print(int(a)-int(b)+int(c))
+            if d=="-":
+                if e=="-":
+                    print(int(a)-int(b)-int(c))
+            if d=="-":
+                if e=="/":
+                    print(int(a)-int(b)/int(c))
+            if d=="-":
+                if e=="x":
+                    print(int(a)-int(b)*int(c))
+            if d=="/":
+                if e=="+":
+                    print(int(a)/int(b)+int(c))
+            if d=="/":
+                if e=="-":
+                    print(int(a)/int(b)-int(c))
+            if d=="/":
+                if e=="/":
+                    print(int(a)/int(b)/int(c))
+            if d=="/":
+                if e=="x":
+                    print(int(a)/int(b)*int(c))
+            if d=="x":
+                if e=="+":
+                    print(int(a)*int(b)+int(c))
+            if d=="x":
+                if e=="-":
+                    print(int(a)*int(b)-int(c))
+            if d=="x":
+                if e=="/":
+                    print(int(a)*int(b)/int(c))
+            if d=="x":
+                if e=="x":
+                    print(int(a)*int(b)*int(c))
+if cal=="off":
+    "off"==False
+    while False:
+        print("Turning off...")
